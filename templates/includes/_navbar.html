@@ -1,0 +1,18 @@
+
+  <nav class="container d-flex flex-column flex-md-row justify-content-between navbar-dark bg-dark ">
+    
+    <a class="navbar-brand" href="/">Criminal Identification System</a>
+    <a class="py-2 d-none d-md-inline-block" href="/">HOME</a>
+    
+    <a class="py-2 d-none d-md-inline-block" href="/faqs">FAQ's</a>
+    {%if session.logged_in%}
+    <a class="py-2 d-none d-md-inline-block" href="/logout">LOGOUT</a>
+    <a class="py-2 d-none d-md-inline-block" href="/system">ACCESS SYSTEM</a>
+    {%else%}
+    <a class="py-2 d-none d-md-inline-block" href="/register">CREATE ID</a>
+    <a class="py-2 d-none d-md-inline-block" href="/login">LOGIN</a>
+    {% endif %}
+    
+    
+    
+  </nav>
